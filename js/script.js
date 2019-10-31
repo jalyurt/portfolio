@@ -1,3 +1,4 @@
+/*
 const backtotop = document.querySelector("#backtotop");
 window.addEventListener("scroll", scrollFunction);
 
@@ -14,3 +15,4 @@ backtotop.addEventListener("click", backtotopFunction);
 function backtotopFunction(){
   window.scrollTo(0, 0);
 }
+*/

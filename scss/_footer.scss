@@ -1,0 +1,18 @@
+/* ---------------------------------
+------------- FOOTER.scss ----------
+--------------------------------- */
+
+// FOOTER
+footer{
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+    
+  .footercontent{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

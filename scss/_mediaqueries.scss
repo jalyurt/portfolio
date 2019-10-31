@@ -1,0 +1,39 @@
+/* -----------------------------------
+------------- MEDIA QUERIES ----------
+----------------------------------- */
+
+// PHONE
+@media screen and (max-width: 600px){
+  // overwrite background image with plain color
+  body{
+    background: #E4E4E4 !important;
+  }
+
+  // have NAVBAR stack vertically
+  ul.topnav li.right, ul.topnav li{
+    float: none;
+  }
+
+  // hide header, left and right sections, footer
+  header, .left, .right, footer{
+    display: none !important; 
+  }
+
+  // shrink google maps and images
+  iframe, img{
+    max-width: 300px;
+  }
+
+  // add more distance between titles and content above
+  h1{
+    margin-top: 60px;
+    margin-bottom: 5px;
+  }
+    
+  // align portfolio pictures vertically
+  .workcontent{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}

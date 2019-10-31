@@ -1,0 +1,139 @@
+/* --------------------------------
+------------- INDEX.scss ----------
+-------------------------------- */
+
+main{
+  display: flex;
+  min-height: 100vh;
+
+  // left side of pages (empty)
+  .left{
+    display: flex;
+    flex-grow: 1;
+  }
+
+  // middle section of pages
+  .middle{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-grow: 1;
+
+    // portfolio
+    #works{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+
+      .workcontent{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        img{
+          opacity: 0.7;
+        }
+
+        img:hover{
+          opacity: 1;
+        }
+      }
+    }
+
+    // about me
+    #about{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+
+      .aboutcontent{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        img{
+          max-width: 50%;
+          opacity: 0.7;
+        }
+
+        img:hover{
+          opacity: 1;
+        }
+
+        p{
+          padding: 30px;
+          max-width: 500px;
+        }
+
+        a{
+          color: #303030;
+        }
+
+        // resume.html button
+        button{
+          border: none;
+          padding: 20px 10px;
+          background: #c4c4c4;
+          margin-top: 15px;
+
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  // contact
+  #contact{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    .contactcontent{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      ul{
+        list-style: none;
+        padding: 5px;
+
+        li a{
+          text-decoration: none;
+          color: #303030;
+        }
+      }
+
+      // github & linkedin icons
+      .socialmedia{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0px;
+      }
+
+      // google maps
+      iframe{
+        opacity: 0.7;
+      }
+
+      iframe:hover{
+        opacity: 1;
+      }
+    }
+  }
+    
+  // right side of pages (empty)
+  .right{
+    display: flex;
+    flex-grow: 1;
+  }
+}
